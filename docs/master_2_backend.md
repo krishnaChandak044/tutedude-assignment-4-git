@@ -1,0 +1,1 @@
+Backend feature branch `master_2`: POST `/submittodoitem` accepts the itemName and itemDescription fields, validates them, and returns the stored item with ID, UUID and hash. Implemented in `project/app.py`.
