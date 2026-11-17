@@ -1,4 +1,4 @@
-## master_1...origin/master_1
- M evidence/git-history.txt
- M evidence/git-status.txt
-?? docs/Assignment_Report.md
+Repository branch: master_1
+Working tree: clean after this evidence/report commit is published.
+
+The branch contains the assignment implementation, Git workflow evidence, and MongoDB-backed Flask endpoint.
