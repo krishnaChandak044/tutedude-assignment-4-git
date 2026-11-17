@@ -6,7 +6,7 @@ def api():
     with open('items.json', encoding='utf-8') as f: return jsonify(json.load(f))
 @app.get('/')
 def home():
-    return '''<!doctype html><title>To-do</title><h1>To-do list</h1><form method="post" action="/submittodoitem"><label>Item ID <input name="itemId"></label><br><label>Item Name <input name="itemName" required></label><br><label>Item Description <textarea name="itemDescription" required></textarea></label><button>Save</button></form>'''
+    return '''<!doctype html><title>To-do</title><h1>To-do list</h1><form method="post" action="/submittodoitem"><label>Item ID <input name="itemId"></label><br><label>Item UUID <input name="itemUuid"></label><br><label>Item Hash <input name="itemHash"></label><br><label>Item Name <input name="itemName" required></label><br><label>Item Description <textarea name="itemDescription" required></textarea></label><button>Save</button></form>'''
 @app.post('/submittodoitem')
 def submit():
     values={k:request.form.get(k,'').strip() for k in ['itemId','itemUuid','itemHash','itemName','itemDescription']}
